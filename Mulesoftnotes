@@ -1,0 +1,19 @@
+Mule global elements:-
+
+Listener configuration will be created as Global Elements. Same configuration can be used for other listeners(if Base path is same), But port numbers should be different otherwise deployment 11 be failed for overlapping it. (Error: A server in port (8081) already exists for host(0.0.0.0). update the listener with another port like 8091 and re-deploy.
+
+Mulitiple flows in mule configuration file vs multiple confirguraion files
+
+Multiple Flows can be created in a single rest service but when we have more number of flow we can have multiple mule configuration files in a single rest service. select new mule configuration file to create a new mule configuration file.
+
+to move the rest service from one flow to other, got configuration XML and from <flow to </flow> cut the content and paste in the configuration XML of another flow after <mule> and before </mule> tag and save and we can see service moved to another flow/configuration.
+
+Mule Application Debugging:-
+
+Add a breakpoint to run application in debugging mode and debugging will run in perspective(debugging mode) and to go back select design mode.
+
+Export and import a Mule Application:-
+
+To export a project: Right click on a project > Export -> choose from General(Archive file/file system) /Mule(Anypoint studio project to Mule Deployable Archive) -> click Next-> select Jar file location along with application name -> click Finish
+
+To import a project File> import -> choose from General (Archive file/file system) /Mule(Anypoint studio project to Mule Deployable Archive), select the jar file ->click Next > choose the file-> click Finish.
