@@ -17,3 +17,32 @@ Export and import a Mule Application:-
 To export a project: Right click on a project > Export -> choose from General(Archive file/file system) /Mule(Anypoint studio project to Mule Deployable Archive) -> click Next-> select Jar file location along with application name -> click Finish
 
 To import a project File> import -> choose from General (Archive file/file system) /Mule(Anypoint studio project to Mule Deployable Archive), select the jar file ->click Next > choose the file-> click Finish.
+
+
+Mule Event sources, event processors & Event message:-
+
+Mule Event sources are the trigger points which allows client requests to process this bussiness logic.
+
+And the connectors right to the dotted line are called as Mule event processors. The Mule event processors are responsible to do the bussiness that we developed.
+
+And whenever a client makes request to this service the incoming request considered as mule event. So, once
+
+Whenever a client makes a request to the service by sending input data that will come to the event source as mule event. And this mule event contains a message structure, So the message structure helps us holding this input data into mule message.
+
+So, whenever we get headers, data or body data that will be injected attributes and the payload of the mule message. The header values will go into the attributes and the input data inside body will be injected into the payload.
+
+this mule event as processed from event trigger or event source to module event processor then we will extract these input fields either from headers or from body using the objects provided by mule message that are attributes and the payload.
+
+Mule Event Message Structure
+
+Inpput data we are receiving over request always resides under mule message structure and coming to the mule message structure, it has attributes, payload and variabl
+
+We must extract the data inside the mule flow to make use of it and to process to the target systems. We dataweave with expressions or dataweave selectors to get the data from message structure.
+
+Mule message structure has default objects to extract input data.
+
+To get headers we use attributes.headers.headerName To get data from payload use payload.fieldName.
+
+, attributes.uriParams, filedName, attributes.queryParams, fieldName.
+
+And whatever variable we create inside flow, those can be used by vars.variablellame.
